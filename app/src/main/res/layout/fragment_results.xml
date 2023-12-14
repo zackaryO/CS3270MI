@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultsFragment">
+
+    <TextView
+        android:id="@+id/txtBMI"
+        android:layout_width="40dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/body_mass_index"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBMI"
+        app:layout_constraintEnd_toStartOf="@id/txtBMI"
+        app:layout_constraintTop_toTopOf="@+id/txtBMI" />
+
+    <TextView
+        android:id="@+id/txtBFP"
+        android:layout_width="40dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtBMI" />
+
+    <TextView
+        android:id="@+id/lblBFP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/body_fat_percentage"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBFP"
+
+        app:layout_constraintEnd_toStartOf="@id/txtBFP"
+        app:layout_constraintTop_toBottomOf="@+id/txtBMI" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
